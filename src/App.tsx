@@ -7,6 +7,7 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SEOHead from './components/SEOHead';
+import SEOContent from './components/SEOContent';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <Products />
       <About />
+      <SEOContent />
       <Testimonials />
       <Contact />
       <Footer />

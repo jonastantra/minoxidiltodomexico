@@ -3,34 +3,34 @@ import React from 'react';
 const SEOHead: React.FC = () => {
   React.useEffect(() => {
     // Update page title
-    document.title = "Crecimiento Barba y Cabello | Minoxidil Los Reyes Nezahualcóyotl Iztapalapa CDMX";
+    document.title = "Minoxidil Ciudad de México | Kirkland Original Neza Iztapalapa CDMX | Comprar Minoxidil";
     
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Minoxidil Kirkland original para crecimiento barba y cabello. Venta en Ciudad de México, Nezahualcóyotl, Iztapalapa, Los Reyes. Minoxidil 5% resultados garantizados. WhatsApp 55-6938-0408.');
+      metaDescription.setAttribute('content', 'Comprar Minoxidil Ciudad de México ✅ Kirkland Original 5% para barba y cabello ✅ Venta directa CDMX, Neza, Iztapalapa ✅ Pickup gratuito ✅ Resultados garantizados ✅ WhatsApp 55-6938-0408');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Minoxidil Kirkland original para crecimiento barba y cabello. Venta en Ciudad de México, Nezahualcóyotl, Iztapalapa, Los Reyes. Minoxidil 5% resultados garantizados. WhatsApp 55-6938-0408.';
+      meta.content = 'Comprar Minoxidil Ciudad de México ✅ Kirkland Original 5% para barba y cabello ✅ Venta directa CDMX, Neza, Iztapalapa ✅ Pickup gratuito ✅ Resultados garantizados ✅ WhatsApp 55-6938-0408';
       document.head.appendChild(meta);
     }
 
     // Add keywords meta tag
     const metaKeywords = document.createElement('meta');
     metaKeywords.name = 'keywords';
-    metaKeywords.content = 'minoxidil kirkland, minoxidil ciudad de mexico, minoxidil nezahualcoyotl, minoxidil neza, minoxidil iztapalapa, minoxidil los reyes, crecimiento barba cdmx, minoxidil 5%, barba kirkland, cabello kirkland, minoxidil original mexico, donde comprar minoxidil cdmx, minoxidil barato neza, productos barba mexico, crecimiento cabello cdmx, minoxidil zona oriente, barba densa mexico, calvicie tratamiento cdmx';
+    metaKeywords.content = 'minoxidil ciudad de mexico, minoxidil kirkland, minoxidil neza, comprar minoxidil cdmx, minoxidil precio ciudad de mexico, minoxidil nezahualcoyotl, minoxidil iztapalapa, donde comprar minoxidil en cdmx, tratamiento crecimiento barba mexico, minoxidil kirkland original cdmx, venta minoxidil ciudad de mexico, minoxidil barato neza, productos barba cdmx, crecimiento cabello ciudad de mexico, minoxidil zona oriente, barba densa mexico, calvicie tratamiento cdmx, minoxidil gustavo a madero, minoxidil ecatepec';
     document.head.appendChild(metaKeywords);
 
     // Add Open Graph tags
     const ogTitle = document.createElement('meta');
     ogTitle.setAttribute('property', 'og:title');
-    ogTitle.content = 'Minoxidil Kirkland Original | Ciudad de México, Neza, Iztapalapa';
+    ogTitle.content = 'Minoxidil Ciudad de México | Kirkland Original CDMX Neza Iztapalapa';
     document.head.appendChild(ogTitle);
 
     const ogDescription = document.createElement('meta');
     ogDescription.setAttribute('property', 'og:description');
-    ogDescription.content = 'Minoxidil Kirkland 5% original para barba y cabello. Venta directa en CDMX, Nezahualcóyotl, Iztapalapa. Resultados garantizados. ¡Contacta por WhatsApp!';
+    ogDescription.content = 'Comprar Minoxidil Ciudad de México ✅ Kirkland Original para barba y cabello ✅ Venta directa CDMX, Neza, Iztapalapa ✅ Pickup gratuito ✅ WhatsApp 55-6938-0408';
     document.head.appendChild(ogDescription);
 
     // Add local business structured data
@@ -39,26 +39,33 @@ const SEOHead: React.FC = () => {
     script.text = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Minoxidil Kirkland CDMX - Crecimiento Barba y Cabello",
-      "description": "Venta de Minoxidil Kirkland original 5% para crecimiento de barba y cabello en Ciudad de México",
+      "name": "Minoxidil Ciudad de México - Kirkland Original CDMX",
+      "description": "Comprar Minoxidil Ciudad de México. Venta Kirkland Original 5% para crecimiento barba y cabello. Pickup gratuito CDMX, Neza, Iztapalapa",
       "telephone": "+52-55-6938-0408",
+      "url": "https://minoxidilcdmx.com",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Los Reyes de la Paz",
+        "addressLocality": "Ciudad de México",
         "addressRegion": "Estado de México",
-        "addressCountry": "MX"
+        "addressCountry": "MX",
+        "postalCode": "57000"
       },
       "areaServed": [
-        "Los Reyes de la Paz",
+        "Ciudad de México",
         "Nezahualcóyotl", 
         "Iztapalapa",
-        "Ciudad de México",
+        "Los Reyes de la Paz",
         "Chimalhuacán",
         "Valle de Chalco",
-        "La Paz Estado de México"
+        "La Paz Estado de México",
+        "Gustavo A. Madero",
+        "Venustiano Carranza",
+        "Ecatepec"
       ],
-      "serviceType": "Venta Minoxidil Kirkland, productos crecimiento barba y cabello",
-      "priceRange": "$400-$900"
+      "serviceType": "Venta Minoxidil Kirkland original, tratamiento crecimiento barba y cabello",
+      "priceRange": "$450-$850",
+      "paymentAccepted": "Efectivo, Transferencia",
+      "currenciesAccepted": "MXN"
     });
     document.head.appendChild(script);
   }, []);
