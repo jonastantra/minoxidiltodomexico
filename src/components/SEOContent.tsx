@@ -108,10 +108,8 @@ const SEOContent: React.FC = () => {
               <span className="text-green-600">Minoxidil Kirkland</span> vs Otras Marcas: 
               ¿Por qué es la mejor opción en México?
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              No todos los <strong>Minoxidil</strong> son iguales. <strong>Kirkland</strong> es la marca líder mundial 
-              con la fórmula más pura y efectiva. Aquí te explicamos por qué elegir <strong>Minoxidil Kirkland</strong> 
-              en <strong>Ciudad de México</strong> es tu mejor inversión:
+            <p className="text-lg text-gray-600">
+              <strong>Kirkland</strong> es la marca líder con fórmula más pura. La mejor opción en <strong>CDMX</strong>.
             </p>
             
             <div className="bg-green-50 border border-green-200 rounded-xl p-6">
@@ -121,31 +119,19 @@ const SEOContent: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-semibold text-green-700 mb-2">✅ Calidad Garantizada</h4>
-                  <p className="text-green-600 text-sm">
-                    Fabricado bajo estándares FDA con concentración exacta al 5%. 
-                    Sin variaciones en la fórmula que puedan afectar resultados.
-                  </p>
+                  <p className="text-green-600 text-sm">Estándares FDA, concentración exacta 5%.</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-green-700 mb-2">✅ Precio Competitivo</h4>
-                  <p className="text-green-600 text-sm">
-                    Mejor relación calidad-precio del mercado. Más económico que marcas 
-                    comerciales con la misma efectividad.
-                  </p>
+                  <p className="text-green-600 text-sm">Mejor precio del mercado con máxima efectividad.</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-green-700 mb-2">✅ Resultados Comprobados</h4>
-                  <p className="text-green-600 text-sm">
-                    Miles de usuarios satisfechos en México. Estudios clínicos que 
-                    respaldan su efectividad al 85%.
-                  </p>
+                  <p className="text-green-600 text-sm">85% de efectividad comprobada clínicamente.</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-green-700 mb-2">✅ Disponibilidad CDMX</h4>
-                  <p className="text-green-600 text-sm">
-                    Stock permanente en Ciudad de México y zona metropolitana. 
-                    Entrega inmediata sin esperas.
-                  </p>
+                  <p className="text-green-600 text-sm">Stock permanente, entrega inmediata CDMX.</p>
                 </div>
               </div>
             </div>

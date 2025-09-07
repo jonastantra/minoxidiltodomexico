@@ -22,7 +22,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
     {
       id: "3-meses-minoxidil-kirkland",
       name: "3 Meses Minoxidil Kirkland - CDMX",
-      description: "Tratamiento completo Minoxidil Kirkland 3 meses para barba densa en Ciudad de México. Minoxidil original importado con resultados garantizados. Comprar Minoxidil en CDMX. Entrega rápida zona metropolitana.",
+      description: "Tratamiento completo 3 meses para barba densa en CDMX. Kirkland original con resultados garantizados.",
       price: "$600",
       originalPrice: "$900",
       image: "https://images.pexels.com/photos/3738088/pexels-photo-3738088.jpeg?auto=compress&cs=tinysrgb&w=400",
@@ -33,7 +33,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
     {
       id: "6-meses-minoxidil-kirkland",
       name: "6 Meses Minoxidil Kirkland - Neza",
-      description: "Minoxidil Kirkland 6 meses tratamiento profesional en Nezahualcóyotl. Crecimiento barba y regeneración capilar completa. Minoxidil Neza con entrega en Nezahualcóyotl. Máximo ahorro y resultados permanentes.",
+      description: "Tratamiento profesional 6 meses en Nezahualcóyotl. Máximo ahorro y resultados permanentes.",
       price: "$1,100",
       originalPrice: "$1,500",
       image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400",
@@ -43,7 +43,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
     {
       id: "biotina-natrol",
       name: "Biotina Natrol 10,000 mcg - CDMX",
-      description: "Biotina Natrol 10,000 mcg para fortalecimiento capilar en Ciudad de México. Complemento perfecto con Minoxidil Kirkland. Tratamiento para barba y cabello más efectivo. Comprar en CDMX con entrega rápida.",
+      description: "Biotina 10,000 mcg para fortalecimiento capilar. Complemento perfecto con Kirkland.",
       price: "$450",
       originalPrice: "$600",
       image: "https://images.pexels.com/photos/3683107/pexels-photo-3683107.jpeg?auto=compress&cs=tinysrgb&w=400",
@@ -53,7 +53,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
     {
       id: "balsamo-crecimiento-barba",
       name: "Bálsamo Crecimiento Barba 12% - Neza",
-      description: "Bálsamo crecimiento barba 12% concentrado en Nezahualcóyotl. Tratamiento para barba densa y suave. Minoxidil Neza complemento perfecto. Entrega en Nezahualcóyotl. Resultados visibles en 3 semanas.",
+      description: "Bálsamo 12% concentrado para barba densa y suave. Resultados visibles en 3 semanas.",
       price: "$480",
       originalPrice: "$650",
       image: "https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=400",
@@ -63,7 +63,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
     {
       id: "12-meses-minoxidil-kirkland",
       name: "12 Meses Minoxidil Kirkland - CDMX",
-      description: "Minoxidil Kirkland 12 meses tratamiento completo en Ciudad de México. Máximo ahorro para crecimiento barba y regeneración capilar. Comprar Minoxidil en CDMX. Tratamiento anual con resultados permanentes garantizados.",
+      description: "Tratamiento anual completo con máximo ahorro. Resultados permanentes garantizados.",
       price: "$2,000",
       originalPrice: "$3,000",
       image: "https://images.pexels.com/photos/3738088/pexels-photo-3738088.jpeg?auto=compress&cs=tinysrgb&w=400",
@@ -73,7 +73,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
     {
       id: "kit-gran-barbon",
       name: "Kit Gran Barbón Minoxidil - Neza",
-      description: "Kit Gran Barbón Minoxidil completo en Nezahualcóyotl. Incluye Minoxidil Kirkland, bálsamo y aceites nutritivos. Minoxidil Neza kit profesional. Entrega en Nezahualcóyotl. Todo lo necesario para barba perfecta.",
+      description: "Kit completo con Kirkland, bálsamo y aceites. Todo lo necesario para barba perfecta.",
       price: "$780",
       originalPrice: "$1,200",
       image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400",
@@ -83,7 +83,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
     {
       id: "shampoo-minoxidil-control",
       name: "Shampoo Minoxidil Control - Neza",
-      description: "Shampoo Minoxidil Control para cabello en Nezahualcóyotl. Complemento perfecto con tratamiento Minoxidil Kirkland. Fortalece y controla caída capilar. Minoxidil Neza con entrega rápida en Nezahualcóyotl.",
+      description: "Shampoo especializado que fortalece y controla caída capilar. Complemento perfecto con Kirkland.",
       price: "$280",
       originalPrice: "$400",
       image: "https://images.pexels.com/photos/3738088/pexels-photo-3738088.jpeg?auto=compress&cs=tinysrgb&w=400",
@@ -93,7 +93,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
     {
       id: "locion-crecimiento-barba",
       name: "Loción Crecimiento Barba 10% - CDMX",
-      description: "Loción crecimiento barba 10% concentrada en Ciudad de México. Tratamiento para barba rápido y efectivo. Comprar en CDMX con entrega inmediata. Complementa perfectamente con Minoxidil Kirkland para mejores resultados.",
+      description: "Loción 10% concentrada para crecimiento rápido. Complementa perfectamente con Kirkland.",
       price: "$349",
       originalPrice: "$500",
       image: "https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=400",
@@ -103,7 +103,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
     {
       id: "minoxidil-kirkland-foam",
       name: "Minoxidil Kirkland 5% Foam - Neza",
-      description: "Minoxidil Kirkland 5% Foam original en Nezahualcóyotl. Fórmula espuma de fácil aplicación para barba y cabello. Minoxidil Neza con entrega en Nezahualcóyotl. Tratamiento profesional con resultados garantizados.",
+      description: "Kirkland 5% Foam original. Fórmula espuma de fácil aplicación con resultados garantizados.",
       price: "$480",
       originalPrice: "$650",
       image: "https://images.pexels.com/photos/3685538/pexels-photo-3685538.jpeg?auto=compress&cs=tinysrgb&w=400",

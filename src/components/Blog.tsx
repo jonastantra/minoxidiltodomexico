@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
-import { Calendar, User, ArrowRight, Search, Tag, MessageCircle } from 'lucide-react';
+import { Calendar, User, Tag, ArrowLeft, Clock, MessageCircle } from 'lucide-react';
+
+// Lazy loading para artículos largos
+const ArticleContent = React.memo(({ article }: { article: any }) => {
+  return (
+    <div className="prose prose-lg max-w-none">
+      <div dangerouslySetInnerHTML={{ __html: article.content }} />
+    </div>
+  );
+});
 
 const Blog: React.FC = () => {
   const [selectedArticle, setSelectedArticle] = useState<string | null>(null);
@@ -247,55 +256,11 @@ const Blog: React.FC = () => {
           <ul>
             <li>Cobertura uniforme en cuero cabelludo</li>
             <li>Secado rápido sin residuos</li>
-            <li>Menos graso que versiones líquidas</li>
+      excerpt: "Las mejores opciones para comprar Minoxidil Kirkland original en CDMX con entrega rápida.",
             <li>Mejor absorción en áreas extensas</li>
           </ul>
         </div>
 
-        <h2>Cómo identificar Minoxidil Kirkland auténtico</h2>
-        
-        <h3>Señales de autenticidad:</h3>
-        <ol>
-          <li><strong>Empaque original Costco</strong> con logo Kirkland</li>
-          <li><strong>Etiquetas en inglés</strong> con información FDA</li>
-          <li><strong>Código de barras verificable</strong></li>
-          <li><strong>Sello de seguridad intacto</strong></li>
-          <li><strong>Fecha de vencimiento clara</strong></li>
-          <li><strong>Textura y olor característicos</strong></li>
-        </ol>
-
-        <h3>Señales de falsificación:</h3>
-        <ul>
-          <li>❌ Precio excesivamente bajo</li>
-          <li>❌ Empaque de mala calidad</li>
-          <li>❌ Etiquetas en español únicamente</li>
-          <li>❌ Sin información de contacto del distribuidor</li>
-          <li>❌ Promesas exageradas de resultados</li>
-        </ul>
-
-        <h2>Testimonios reales: Kirkland vs. otras marcas</h2>
-        
-        <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
-          <h4>Carlos M. - Nezahualcóyotl</h4>
-          <p><em>"Probé 3 marcas diferentes antes de Kirkland. Con las genéricas no veía cambios después de 2 meses. Con Kirkland, en 5 semanas ya tenía barba visible. La diferencia es abismal."</em></p>
-        </div>
-
-        <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
-          <h4>Miguel R. - Iztapalapa</h4>
-          <p><em>"Compré Minoxidil 'barato' en línea y me salió sarpullido. Con Kirkland original de Neza, cero problemas y excelentes resultados en mi cabello."</em></p>
-        </div>
-
-        <h2>Precios comparativos en CDMX y Neza 2025</h2>
-        
-        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-          <tr style="background: #f8f9fa;">
-            <th style="border: 1px solid #ddd; padding: 12px;">Marca</th>
-            <th style="border: 1px solid #ddd; padding: 12px;">Precio 1 mes</th>
-            <th style="border: 1px solid #ddd; padding: 12px;">Calidad</th>
-            <th style="border: 1px solid #ddd; padding: 12px;">Disponibilidad</th>
-          </tr>
-          <tr>
-            <td style="border: 1px solid #ddd; padding: 12px;"><strong>Kirkland Original</strong></td>
             <td style="border: 1px solid #ddd; padding: 12px;">$450-600</td>
             <td style="border: 1px solid #ddd; padding: 12px;">⭐⭐⭐⭐⭐</td>
             <td style="border: 1px solid #ddd; padding: 12px;">✅ Siempre</td>
@@ -765,56 +730,16 @@ const Blog: React.FC = () => {
             <li><strong>Horarios:</strong> Flexibles, incluye fines de semana</li>
           </ul>
           
-          <h4>2. Farmacias de cadena</h4>
-          <ul>
-            <li><strong>Disponibilidad:</strong> Variable, no siempre tienen Kirkland</li>
-            <li><strong>Precios:</strong> 30-40% más caros</li>
-            <li><strong>Ventaja:</strong> Múltiples ubicaciones</li>
-          </ul>
-          
-          <h4>3. Compra en línea</h4>
-          <ul>
-            <li><strong>Riesgo:</strong> Productos falsificados comunes</li>
-            <li><strong>Tiempo:</strong> 3-7 días de envío</li>
-            <li><strong>Recomendación:</strong> Solo de vendedores verificados</li>
-          </ul>
-        </div>
-
-        <h3>¿Cómo identificar Minoxidil Kirkland original?</h3>
-        <p><strong>Señales de autenticidad:</strong></p>
-        <ol>
-          <li><strong>Empaque Costco:</strong> Logo Kirkland Signature visible</li>
-          <li><strong>Etiquetas en inglés:</strong> Información FDA completa</li>
-          <li><strong>Código de barras:</strong> Verificable en línea</li>
-          <li><strong>Sello de seguridad:</strong> Intacto y difícil de falsificar</li>
-          <li><strong>Textura del líquido:</strong> Ligeramente viscoso, transparente</li>
-          <li><strong>Olor característico:</strong> Alcohol y propilenglicol</li>
-        </ol>
-        
-        <p><strong>Señales de falsificación:</strong></p>
-        <ul>
-          <li>❌ Precio excesivamente bajo</li>
+      content: `<h2>¿Por qué elegir Minoxidil en Ciudad de México?</h2><p>La <strong>Ciudad de México</strong> se ha convertido en el epicentro de la venta de <strong>Minoxidil Kirkland original</strong>. Ofrecemos entrega rápida en <strong>Iztapalapa, Nezahualcóyotl</strong> y zona metropolitana.</p><h3>Mejores opciones en CDMX</h3><ul><li>Precios desde $250 pesos</li><li>Kirkland 100% original</li><li>Entrega en 2-4 horas</li></ul>`
           <li>❌ Empaque de mala calidad o diferente</li>
           <li>❌ Etiquetas solo en español</li>
           <li>❌ Sin información de contacto del distribuidor</li>
           <li>❌ Líquido muy acuoso o con color extraño</li>
-        </ul>
+      excerpt: "Análisis completo: por qué Kirkland es la mejor opción para crecimiento de barba en CDMX y Neza.",
 
         <h2>💰 Preguntas sobre precios y costos</h2>
         
         <h3>¿Cuánto cuesta el tratamiento completo de Minoxidil?</h3>
-        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
-          <p><strong>Costos en CDMX y Nezahualcóyotl (2025):</strong></p>
-          
-          <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-            <tr style="background: #f1f5f9;">
-              <th style="border: 1px solid #ddd; padding: 10px;">Duración</th>
-              <th style="border: 1px solid #ddd; padding: 10px;">Kirkland Original</th>
-              <th style="border: 1px solid #ddd; padding: 10px;">Costo mensual</th>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #ddd; padding: 10px;">1 mes</td>
-              <td style="border: 1px solid #ddd; padding: 10px;">$450-600</td>
               <td style="border: 1px solid #ddd; padding: 10px;">$450-600</td>
             </tr>
             <tr>
@@ -908,73 +833,12 @@ const Blog: React.FC = () => {
         <h3>¿Necesito consultar un médico antes de usar Minoxidil?</h3>
         <div style="background: #e7f3ff; padding: 15px; border-radius: 8px; margin: 15px 0;">
           <p><strong>Consulta recomendada si tienes:</strong></p>
-          <ul>
-            <li>Problemas cardíacos o presión arterial</li>
-            <li>Enfermedades de la piel (dermatitis, psoriasis)</li>
-            <li>Alergias conocidas a medicamentos</li>
-            <li>Estás tomando otros medicamentos</li>
-            <li>Eres menor de 18 años</li>
-          </ul>
-          
-          <p><strong>Generalmente NO necesitas consulta si:</strong></p>
-          <ul>
-            <li>Eres adulto sano sin condiciones médicas</li>
-            <li>No tomas medicamentos regulares</li>
-            <li>No tienes alergias conocidas</li>
-            <li>Tu piel es normal (no muy sensible)</li>
-          </ul>
-        </div>
-
-        <h3>¿Puede interferir Minoxidil con otros medicamentos?</h3>
-        <p><strong>Interacciones conocidas:</strong></p>
-        <ul>
-          <li><strong>Medicamentos para presión:</strong> Puede potenciar efecto hipotensor</li>
-          <li><strong>Anticoagulantes:</strong> Monitoreo adicional recomendado</li>
-          <li><strong>Corticosteroides tópicos:</strong> Pueden aumentar absorción</li>
-        </ul>
-
-        <h2>📱 Preguntas sobre servicio y soporte</h2>
-        
-        <h3>¿Ofrecen seguimiento durante el tratamiento?</h3>
-        <p><strong>Soporte incluido al comprar en Neza/CDMX:</strong></p>
-        <ul>
-          <li>📱 <strong>WhatsApp directo:</strong> Consultas ilimitadas</li>
-          <li>📋 <strong>Guía personalizada:</strong> Según tu tipo de piel</li>
-          <li>📊 <strong>Seguimiento mensual:</strong> Evaluación de progreso</li>
-          <li>🔄 <strong>Ajustes de rutina:</strong> Según resultados</li>
-          <li>🆘 <strong>Soporte de emergencia:</strong> Para efectos adversos</li>
-        </ul>
-
-        <h3>¿Qué garantía ofrecen?</h3>
-        <div style="background: #ecfdf5; padding: 15px; border-radius: 8px; margin: 15px 0;">
-          <p><strong>Garantías incluidas:</strong></p>
-          <ul>
-            <li>✅ <strong>Producto original:</strong> 100% Kirkland auténtico</li>
-            <li>✅ <strong>Fecha de vencimiento:</strong> Mínimo 18 meses</li>
-            <li>✅ <strong>Reemplazo:</strong> Si el producto llega dañado</li>
-            <li>✅ <strong>Soporte técnico:</strong> Durante todo el tratamiento</li>
-          </ul>
-          
-          <p><strong>Política de satisfacción:</strong></p>
-          <p>Si no ves ningún resultado después de 4 meses de uso correcto, ofrecemos descuento del 50% en tu siguiente compra.</p>
-        </div>
-
-        <h2>Conclusión: Tu guía completa</h2>
-        
-        <p>Esta guía de <strong>preguntas frecuentes sobre Minoxidil en México</strong> cubre los aspectos más importantes que debes conocer antes de comenzar tu tratamiento. La clave del éxito está en usar <strong>producto original</strong>, mantener <strong>constancia</strong> y tener <strong>expectativas realistas</strong>.</p>
-
-        <p>Si tienes dudas adicionales sobre <strong>comprar Minoxidil en Nezahualcóyotl</strong> o <strong>CDMX</strong>, nuestro equipo está disponible para asesorarte personalmente.</p>
-        
-        <div style="background: linear-gradient(135deg, #10b981, #3b82f6); color: white; padding: 30px; border-radius: 15px; text-align: center; margin: 30px 0;">
-          <h3>¿Tienes más preguntas?</h3>
-          <p>Haz tu pedido con entrega rápida en CDMX y Neza por WhatsApp. Incluimos asesoría personalizada y seguimiento completo durante tu tratamiento.</p>
-        </div>
-      `
+      content: `<h2>Kirkland: El estándar de oro</h2><p><strong>Minoxidil Kirkland</strong> supera a marcas genéricas en efectividad y pureza. En <strong>Nezahualcóyotl</strong> y <strong>CDMX</strong> hemos visto 95% de efectividad.</p><h3>Ventajas de Kirkland</h3><ul><li>Concentración exacta 5%</li><li>Resultados en 4-6 semanas</li><li>Pureza 99.9%</li></ul>`
     },
     {
       id: 'vitaminas-suplementos-potencian-minoxidil',
       title: 'Vitaminas y suplementos que potencian el efecto del Minoxidil',
-      excerpt: 'Descubre cómo la Biotina, vitaminas y suplementos pueden acelerar los resultados del Minoxidil. Guía completa de combinaciones efectivas en CDMX y Neza.',
+      excerpt: "Guía completa: técnica correcta y horarios ideales para maximizar resultados con Kirkland.",
       image: 'https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=800',
       date: '2025-01-05',
       author: 'Nutrióloga María González',
@@ -1140,9 +1004,7 @@ const Blog: React.FC = () => {
             <li>Derma roller 2x semana</li>
           </ul>
           
-          <h4>Costo mensual: $1,800-2,200</h4>
-          <h4>Resultados esperados: 2-3 semanas</h4>
-        </div>
+                    <ArticleContent article={articles[selectedArticle]} />
 
         <h2>🍎 Alimentos que potencian tu tratamiento</h2>
         
@@ -1216,109 +1078,7 @@ const Blog: React.FC = () => {
         
         <h3>Opciones recomendadas por calidad-precio</h3>
         <div style="background: #f0f9ff; padding: 15px; border-radius: 8px; margin: 15px 0;">
-          <h4>🏪 Distribuidores especializados (Recomendado)</h4>
-          <ul>
-            <li><strong>Ubicación:</strong> Nezahualcóyotl, Iztapalapa</li>
-            <li><strong>Ventajas:</strong> Productos originales, precios mayoreo</li>
-            <li><strong>Marcas:</strong> Natrol, Nature's Bounty, NOW Foods</li>
-            <li><strong>Descuentos:</strong> Combos Minoxidil + Suplementos</li>
-          </ul>
-          
-          <h4>🏥 Farmacias de cadena</h4>
-          <ul>
-            <li><strong>Disponibilidad:</strong> Buena para marcas básicas</li>
-            <li><strong>Precios:</strong> 20-30% más caros</li>
-            <li><strong>Ventaja:</strong> Múltiples ubicaciones</li>
-          </ul>
-          
-          <h4>🛒 Tiendas naturistas</h4>
-          <ul>
-            <li><strong>Variedad:</strong> Opciones orgánicas y naturales</li>
-            <li><strong>Asesoría:</strong> Personal capacitado</li>
-            <li><strong>Precios:</strong> Variables según marca</li>
-          </ul>
-        </div>
-
-        <h2>⚠️ Precauciones y contraindicaciones</h2>
-        
-        <h3>Suplementos que requieren precaución</h3>
-        <ul>
-          <li><strong>Hierro:</strong> Puede causar estreñimiento, tomar con fibra</li>
-          <li><strong>Zinc:</strong> Dosis altas pueden reducir absorción de cobre</li>
-          <li><strong>Vitamina D:</strong> Exceso puede causar hipercalcemia</li>
-          <li><strong>Biotina:</strong> Puede interferir con análisis de laboratorio</li>
-        </ul>
-
-        <h3>Cuándo consultar un médico</h3>
-        <div style="background: #fef3c7; padding: 15px; border-radius: 8px; margin: 15px 0;">
-          <p><strong>Consulta antes de suplementar si tienes:</strong></p>
-          <ul>
-            <li>Enfermedades crónicas (diabetes, hipertensión)</li>
-            <li>Problemas de tiroides</li>
-            <li>Tomas medicamentos regulares</li>
-            <li>Alergias conocidas</li>
-            <li>Problemas digestivos severos</li>
-          </ul>
-        </div>
-
-        <h2>📊 Resultados esperados por combinación</h2>
-        
-        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-          <tr style="background: #f8f9fa;">
-            <th style="border: 1px solid #ddd; padding: 12px;">Combinación</th>
-            <th style="border: 1px solid #ddd; padding: 12px;">Tiempo resultados</th>
-            <th style="border: 1px solid #ddd; padding: 12px;">Mejora vs solo Minoxidil</th>
-            <th style="border: 1px solid #ddd; padding: 12px;">Costo mensual</th>
-          </tr>
-          <tr>
-            <td style="border: 1px solid #ddd; padding: 12px;">Solo Minoxidil</td>
-            <td style="border: 1px solid #ddd; padding: 12px;">6-8 semanas</td>
-            <td style="border: 1px solid #ddd; padding: 12px;">Base (100%)</td>
-            <td style="border: 1px solid #ddd; padding: 12px;">$450-600</td>
-          </tr>
-          <tr>
-            <td style="border: 1px solid #ddd; padding: 12px;">Minoxidil + Biotina</td>
-            <td style="border: 1px solid #ddd; padding: 12px;">4-6 semanas</td>
-            <td style="border: 1px solid #ddd; padding: 12px;">+25%</td>
-            <td style="border: 1px solid #ddd; padding: 12px;">$750-900</td>
-          </tr>
-          <tr>
-            <td style="border: 1px solid #ddd; padding: 12px;">Stack completo</td>
-            <td style="border: 1px solid #ddd; padding: 12px;">3-4 semanas</td>
-            <td style="border: 1px solid #ddd; padding: 12px;">+40%</td>
-            <td style="border: 1px solid #ddd; padding: 12px;">$1,200-1,500</td>
-          </tr>
-        </table>
-
-        <h2>🎯 Consejos para maximizar resultados</h2>
-        
-        <h3>Optimización de absorción</h3>
-        <ul>
-          <li><strong>Toma suplementos con comida:</strong> Mejora absorción y reduce molestias</li>
-          <li><strong>Separa minerales:</strong> Zinc y hierro compiten por absorción</li>
-          <li><strong>Hidratación constante:</strong> 2-3 litros de agua diarios</li>
-          <li><strong>Ejercicio regular:</strong> Mejora circulación sanguínea</li>
-        </ul>
-
-        <h3>Monitoreo de progreso</h3>
-        <ol>
-          <li><strong>Fotos semanales:</strong> Misma luz y ángulo</li>
-          <li><strong>Medición de áreas:</strong> Usa regla para precisión</li>
-          <li><strong>Diario de síntomas:</strong> Anota cambios y efectos</li>
-          <li><strong>Análisis de sangre:</strong> Cada 3-6 meses</li>
-        </ol>
-
-        <h2>Conclusión: La fórmula del éxito</h2>
-        
-        <p>Combinar <strong>Minoxidil Kirkland</strong> con los suplementos correctos puede transformar completamente tus resultados. La clave está en elegir productos de calidad, mantener constancia y ajustar según tu respuesta individual.</p>
-
-        <p>En <strong>CDMX y Nezahualcóyotl</strong> tienes acceso a todos los suplementos necesarios para crear tu stack perfecto. Comienza con lo básico (Minoxidil + Biotina) y ve agregando según tus necesidades y presupuesto.</p>
-        
-        <div style="background: linear-gradient(135deg, #10b981, #3b82f6); color: white; padding: 30px; border-radius: 15px; text-align: center; margin: 30px 0;">
-          <h3>¿Listo para potenciar tu tratamiento?</h3>
-          <p>Haz tu pedido de Minoxidil + Suplementos con entrega rápida en CDMX y Neza por WhatsApp. Combos especiales disponibles con descuentos exclusivos.</p>
-        </div>
-      `
+      content: `<h2>Aplicación correcta paso a paso</h2><p>El <strong>Minoxidil Kirkland</strong> requiere técnica correcta. Nuestros clientes en <strong>CDMX</strong> y <strong>Neza</strong> siguen esta rutina con 95% de éxito.</p><h3>Pasos básicos</h3><ol><li>Limpia la zona</li><li>Aplica 1ml por noche</li><li>Masajea suavemente</li><li>No enjuagues por 4 horas</li></ol>`
     }
   ];
 
@@ -1367,168 +1127,17 @@ const Blog: React.FC = () => {
               src={article.image}
               alt={article.title}
               className="w-full h-64 sm:h-80 object-cover rounded-xl mb-6"
-            />
-          </div>
-
-          {/* Article content */}
-          <div 
-            className="prose prose-lg max-w-none"
-            dangerouslySetInnerHTML={{ __html: article.content }}
-          />
-
-          {/* CTA at bottom */}
-          <div className="mt-12 bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl p-8 text-center text-white">
-            <h3 className="text-2xl font-bold mb-4">
-              ¿Te fue útil este artículo?
-            </h3>
-            <p className="text-green-100 mb-6">
-              Comparte tu experiencia y haz tu pedido con entrega rápida en CDMX y Neza
-            </p>
-            <a
-              href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-white text-green-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors font-bold text-lg shadow-lg transform hover:scale-105"
-            >
-              <MessageCircle className="w-6 h-6 mr-3" />
-              Contactar por WhatsApp
-            </a>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <section id="blog" className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Blog <span className="text-green-600">Minoxidil</span> México
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Guías completas, consejos de expertos y todo lo que necesitas saber sobre 
-            <strong> Minoxidil en Ciudad de México y Nezahualcóyotl</strong>
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
-          {blogPosts.map((post) => (
-            <article
+      content: `<h2>FAQ Minoxidil México 2025</h2><p>Respuestas basadas en consultas reales de clientes en <strong>CDMX</strong> y <strong>Nezahualcóyotl</strong>.</p><h3>¿Cuánto tarda en hacer efecto?</h3><p>Con <strong>Kirkland original</strong>: 4-6 semanas primeros resultados, 2-3 meses crecimiento significativo.</p><h3>¿Es seguro para barba?</h3><p>Completamente seguro, aprobado por FDA.</p>`
               key={post.id}
               className="bg-white rounded-2xl shadow-lg hover:shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300"
             >
               <div className="relative">
-                <img
+      excerpt: "Cómo Biotina y vitaminas multiplican los resultados del Kirkland. Stacks completos en CDMX y Neza.",
                   src={post.image}
                   alt={post.title}
                   className="w-full h-48 object-cover"
                 />
-                <div className="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">
-                  {post.category}
-                </div>
-                <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
-                  {post.readTime}
-                </div>
-              </div>
-
-              <div className="p-6 space-y-4">
-                <div className="flex items-center gap-4 text-sm text-gray-600">
-                  <div className="flex items-center gap-1">
-                    <Calendar className="w-4 h-4" />
-                    <span>{new Date(post.date).toLocaleDateString('es-ES', { 
-                      year: 'numeric', 
-                      month: 'short', 
-                      day: 'numeric' 
-                    })}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <User className="w-4 h-4" />
-                    <span>{post.author}</span>
-                  </div>
-                </div>
-
-                <h3 className="text-xl font-bold text-gray-900 leading-tight hover:text-green-600 transition-colors">
-                  {post.title}
-                </h3>
-                
-                <p className="text-gray-600 leading-relaxed">
-                  {post.excerpt}
-                </p>
-
-                <div className="flex flex-wrap gap-2">
-                  {post.keywords.slice(0, 3).map((keyword, index) => (
-                    <span
-                      key={index}
-                      className="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-medium"
-                    >
-                      {keyword}
-                    </span>
-                  ))}
-                </div>
-
-                <button
-                  onClick={() => handleReadMore(post.id)}
-                  className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors flex items-center justify-center gap-2 font-semibold"
-                >
-                  Leer artículo completo
-                  <ArrowRight className="w-5 h-5" />
-                </button>
-              </div>
-            </article>
-          ))}
-        </div>
-
-        {/* Search and categories section */}
-        <div className="mt-16 bg-white rounded-2xl shadow-lg p-8">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Encuentra el contenido que necesitas
-            </h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              <div className="flex items-center bg-gray-100 rounded-lg px-4 py-2">
-                <Search className="w-5 h-5 text-gray-500 mr-2" />
-                <span className="text-gray-700">Guías de compra</span>
-              </div>
-              <div className="flex items-center bg-gray-100 rounded-lg px-4 py-2">
-                <Tag className="w-5 h-5 text-gray-500 mr-2" />
-                <span className="text-gray-700">Comparativas</span>
-              </div>
-              <div className="flex items-center bg-gray-100 rounded-lg px-4 py-2">
-                <User className="w-5 h-5 text-gray-500 mr-2" />
-                <span className="text-gray-700">Tutoriales</span>
-              </div>
-              <div className="flex items-center bg-gray-100 rounded-lg px-4 py-2">
-                <MessageCircle className="w-5 h-5 text-gray-500 mr-2" />
-                <span className="text-gray-700">FAQ</span>
-              </div>
-            </div>
-          </div>
-          
-          <div className="text-center">
-            <p className="text-gray-600 mb-6">
-              ¿No encuentras la información que buscas? Nuestro equipo de expertos está disponible 
-              para resolver todas tus dudas sobre <strong>Minoxidil en CDMX y Nezahualcóyotl</strong>.
-            </p>
-            <a
-              href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hola! Tengo una pregunta sobre Minoxidil que no encontré en el blog. ¿Pueden ayudarme?")}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold"
-            >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              Consulta personalizada por WhatsApp
-            </a>
-          </div>
-        </div>
-        
-        {/* Hidden SEO Content */}
-        <div className="sr-only">
-          <h3>Blog Minoxidil Ciudad de México y Nezahualcóyotl</h3>
-          <p>Blog especializado en Minoxidil Ciudad de México, Minoxidil Nezahualcóyotl, guías de compra Minoxidil CDMX, cómo usar Minoxidil Kirkland, comparativas Minoxidil México, preguntas frecuentes Minoxidil, suplementos para barba CDMX, vitaminas crecimiento cabello Neza, biotina Ciudad de México, consejos expertos Minoxidil.</p>
-        </div>
-      </div>
-    </section>
+      content: `<h2>Suplementos que potencian Minoxidil</h2><p>Combinar <strong>Kirkland</strong> con <strong>Biotina</strong> acelera resultados 40%. En <strong>CDMX</strong> y <strong>Neza</strong> ofrecemos stacks completos.</p><h3>Stack recomendado</h3><ul><li>Minoxidil Kirkland - $450</li><li>Biotina 10,000 mcg - $450</li><li>Precio stack: $850</li></ul>`
   );
 };
 
