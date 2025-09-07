@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://minoxidilcdmx.com/sitemap.xml
+
+# Páginas importantes para crawling
+Allow: /#productos
+Allow: /#blog
+Allow: /#nosotros
+Allow: /#sucursales
+Allow: /#contacto
+
+# Optimización para bots de búsqueda
+Crawl-delay: 1
+
+# Información adicional
+# Sitio web: Minoxidil Ciudad de México
+# Productos: Minoxidil Kirkland original para barba y cabello
+# Zonas de servicio: CDMX, Nezahualcóyotl, Iztapalapa, Los Reyes
+# WhatsApp: 55-6938-0408
