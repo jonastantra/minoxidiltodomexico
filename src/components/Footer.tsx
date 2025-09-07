@@ -11,11 +11,11 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">
-              Barba<span className="text-green-400">Pro</span>
+              Minoxidil<span className="text-green-400">Kirkland</span>
             </h3>
             <p className="text-gray-300">
-              Especialistas en crecimiento de barba y cabello con minoxidil original. 
-              Más de 500 clientes satisfechos en la zona oriente de CDMX.
+              Especialistas en <strong>Minoxidil Kirkland original</strong> para crecimiento de barba y cabello. 
+              Más de 500 clientes satisfechos en <strong>Ciudad de México, Nezahualcóyotl, Iztapalapa</strong>.
             </p>
             <a
               href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
@@ -33,17 +33,17 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 text-gray-300">
               <li>
                 <a href="#productos" className="hover:text-green-400 transition-colors">
-                  Minoxidil Barba 5%
+                  Minoxidil Kirkland Barba 5%
                 </a>
               </li>
               <li>
                 <a href="#productos" className="hover:text-green-400 transition-colors">
-                  Minoxidil Cabello 5%
+                  Minoxidil Kirkland Cabello 5%
                 </a>
               </li>
               <li>
                 <a href="#productos" className="hover:text-green-400 transition-colors">
-                  Kit Completo
+                  Kit Kirkland Completo
                 </a>
               </li>
               <li>
@@ -55,8 +55,12 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Zonas de Servicio</h4>
+            <h4 className="text-lg font-semibold mb-4">Zonas de Venta</h4>
             <ul className="space-y-2 text-gray-300">
+              <li className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-green-400" />
+                Ciudad de México
+              </li>
               <li className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-green-400" />
                 Los Reyes de la Paz
@@ -97,13 +101,19 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="grid md:grid-cols-2 gap-4 items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 BarbaPro. Todos los derechos reservados. Productos para crecimiento de barba y cabello en CDMX.
+              © 2024 Minoxidil Kirkland CDMX. Todos los derechos reservados. Venta Minoxidil Kirkland original para crecimiento de barba y cabello.
             </p>
             <div className="text-sm text-gray-400 md:text-right">
               <p>
-                <strong>Keywords:</strong> crecimiento barba, minoxidil, cabello, Los Reyes, Nezahualcóyotl, Iztapalapa
+                <strong>Keywords:</strong> minoxidil kirkland, ciudad de mexico, nezahualcoyotl, iztapalapa, crecimiento barba, minoxidil original
               </p>
             </div>
+          </div>
+          
+          {/* Hidden SEO Footer Content */}
+          <div className="sr-only mt-8">
+            <h4>Minoxidil Kirkland México - Venta Original</h4>
+            <p>Venta de Minoxidil Kirkland original en México. Minoxidil Kirkland Ciudad de México, Minoxidil Kirkland Nezahualcóyotl, Minoxidil Kirkland Iztapalapa, Minoxidil Kirkland Los Reyes. Donde comprar Minoxidil Kirkland en CDMX. Minoxidil original importado. Productos para crecimiento de barba y cabello. Minoxidil 5% concentrado. Tratamiento calvicie México. Barba densa productos. Crecimiento capilar CDMX.</p>
           </div>
         </div>
       </div>

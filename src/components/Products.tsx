@@ -7,33 +7,33 @@ const Products: React.FC = () => {
   const products = [
     {
       id: 1,
-      name: "Minoxidil Barba 5%",
-      description: "Fórmula especializada para crecimiento de barba. Aplicación fácil, resultados en 4-6 semanas.",
+      name: "Minoxidil Kirkland Barba 5%",
+      description: "Minoxidil Kirkland original importado para crecimiento de barba. Fórmula concentrada, resultados garantizados en 4-6 semanas.",
       price: "$450",
       originalPrice: "$600",
       image: "https://images.pexels.com/photos/3685538/pexels-photo-3685538.jpeg?auto=compress&cs=tinysrgb&w=400",
-      benefits: ["Estimula folículos", "Sin efectos secundarios", "Aplicación nocturna"],
-      whatsappMessage: "Hola! Me interesa el Minoxidil para Barba 5%. ¿Está disponible para pickup?"
+      benefits: ["Kirkland Original", "Estimula folículos", "Aplicación nocturna"],
+      whatsappMessage: "Hola! Me interesa el Minoxidil Kirkland para Barba 5%. ¿Está disponible para pickup en CDMX/Neza?"
     },
     {
       id: 2, 
-      name: "Minoxidil Cabello 5%",
-      description: "Tratamiento profesional para calvicie y debilitamiento capilar. Fórmula concentrada.",
+      name: "Minoxidil Kirkland Cabello 5%",
+      description: "Minoxidil Kirkland original para calvicie y debilitamiento capilar. Tratamiento profesional importado, fórmula concentrada.",
       price: "$520",
       originalPrice: "$700",
       image: "https://images.pexels.com/photos/3738088/pexels-photo-3738088.jpeg?auto=compress&cs=tinysrgb&w=400",
-      benefits: ["Frena caída", "Aumenta densidad", "Fortalece cabello"],
-      whatsappMessage: "Hola! Me interesa el Minoxidil para Cabello 5%. ¿Puedo recogerlo en Los Reyes?"
+      benefits: ["Kirkland Original", "Frena caída", "Aumenta densidad"],
+      whatsappMessage: "Hola! Me interesa el Minoxidil Kirkland para Cabello 5%. ¿Puedo recogerlo en Los Reyes/Neza/Iztapalapa?"
     },
     {
       id: 3,
-      name: "Kit Completo Barba + Cabello",
-      description: "Combo especial: Minoxidil barba + cabello + aceite nutritivo. El más vendido.",
+      name: "Kit Kirkland Completo Barba + Cabello",
+      description: "Combo especial: Minoxidil Kirkland barba + cabello + aceite nutritivo. El más vendido en CDMX y zona oriente.",
       price: "$850",
       originalPrice: "$1200",
       image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400",
-      benefits: ["Combo completo", "Ahorro del 30%", "Aceite de regalo"],
-      whatsappMessage: "¡Hola! Me interesa el Kit Completo Barba + Cabello. ¿Cuál es el proceso para el pickup?",
+      benefits: ["Kirkland Original", "Ahorro del 30%", "Aceite de regalo"],
+      whatsappMessage: "¡Hola! Me interesa el Kit Kirkland Completo Barba + Cabello. ¿Cuál es el proceso para el pickup en CDMX?",
       isPopular: true
     }
   ];
@@ -43,11 +43,11 @@ const Products: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 lg:mb-12">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 lg:mb-4">
-            Productos para <span className="text-green-600">Crecimiento</span>
+            <span className="text-green-600">Minoxidil Kirkland</span> Original
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-            Minoxidil original al 5% con resultados comprobados. Pickup disponible en{' '}
-            <strong>Los Reyes de la Paz, Nezahualcóyotl e Iztapalapa</strong>
+            Minoxidil Kirkland original al 5% importado con resultados comprobados. Venta directa en{' '}
+            <strong>Ciudad de México, Nezahualcóyotl, Iztapalapa y Los Reyes</strong>
           </p>
         </div>
 
@@ -68,7 +68,7 @@ const Products: React.FC = () => {
               <div className="relative">
                 <img
                   src={product.image}
-                  alt={`${product.name} - crecimiento barba cabello minoxidil`}
+                  alt={`${product.name} - Minoxidil Kirkland Ciudad de México Nezahualcóyotl`}
                   className="w-full h-40 sm:h-48 object-cover"
                 />
                 <div className="absolute top-2 left-2 sm:top-4 sm:left-4 bg-red-500 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-bold">
@@ -121,13 +121,19 @@ const Products: React.FC = () => {
         <div className="mt-8 lg:mt-12 text-center">
           <div className="bg-green-100 border border-green-200 rounded-xl p-4 sm:p-6 max-w-2xl mx-auto">
             <h3 className="text-base sm:text-lg font-bold text-green-800 mb-2">
-              🚚 Pickup Gratis en Zona Oriente
+              🚚 Venta Directa Zona Oriente CDMX
             </h3>
             <p className="text-sm sm:text-base text-green-700">
-              Recoge tu producto sin costo adicional en <strong>Los Reyes de la Paz, 
-              Nezahualcóyotl o Iztapalapa</strong>. Coordinamos contigo el punto de encuentro.
+              Recoge tu <strong>Minoxidil Kirkland</strong> sin costo adicional en <strong>Ciudad de México, 
+              Nezahualcóyotl, Iztapalapa o Los Reyes</strong>. Coordinamos contigo el punto de encuentro.
             </p>
           </div>
+        </div>
+        
+        {/* Hidden SEO Content */}
+        <div className="sr-only">
+          <h3>Donde comprar Minoxidil Kirkland en Ciudad de México</h3>
+          <p>Venta de Minoxidil Kirkland original en Ciudad de México, Nezahualcóyotl, Iztapalapa, Los Reyes. Minoxidil Kirkland barato CDMX. Donde comprar Minoxidil Kirkland Nezahualcóyotl. Minoxidil Kirkland Iztapalapa. Productos barba México. Minoxidil original importado.</p>
         </div>
       </div>
     </section>

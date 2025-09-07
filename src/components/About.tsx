@@ -8,22 +8,23 @@ const About: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
-              ¿Por qué elegir nuestros productos para{' '}
-              <span className="text-green-600">crecimiento</span>?
+              ¿Por qué elegir{' '}
+              <span className="text-green-600">Minoxidil Kirkland</span> original?
             </h2>
             <p className="text-lg text-gray-600">
-              Somos especialistas en productos para crecimiento de barba y cabello en la zona oriente 
-              de la Ciudad de México. Nuestro <strong>minoxidil al 5%</strong> es 100% original y ha 
-              ayudado a más de 500 personas a lograr la barba y cabello que desean.
+              Somos especialistas en <strong>Minoxidil Kirkland original</strong> para crecimiento de barba y cabello en 
+              <strong>Ciudad de México, Nezahualcóyotl, Iztapalapa</strong> y zona oriente. 
+              Nuestro <strong>Minoxidil Kirkland 5%</strong> es 100% original importado y ha 
+              ayudado a más de 500 personas en CDMX a lograr la barba y cabello que desean.
             </p>
 
             <div className="space-y-4">
               <div className="flex items-start gap-4">
                 <Shield className="w-8 h-8 text-green-600 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-bold text-gray-900">Productos Originales</h3>
+                  <h3 className="font-bold text-gray-900">Minoxidil Kirkland Original</h3>
                   <p className="text-gray-600">
-                    Minoxidil 100% original con certificación. Sin imitaciones ni productos genéricos.
+                    Minoxidil Kirkland 100% original importado con certificación. Sin imitaciones ni productos genéricos.
                   </p>
                 </div>
               </div>
@@ -51,10 +52,10 @@ const About: React.FC = () => {
               <div className="flex items-start gap-4">
                 <MapPin className="w-8 h-8 text-green-600 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-bold text-gray-900">Pickup en Zona Oriente</h3>
+                  <h3 className="font-bold text-gray-900">Venta Directa Zona Oriente CDMX</h3>
                   <p className="text-gray-600">
-                    Entrega gratuita en <strong>Los Reyes de la Paz, Nezahualcóyotl, Iztapalapa</strong> y 
-                    zonas aledañas del oriente de CDMX.
+                    Venta directa de <strong>Minoxidil Kirkland</strong> en <strong>Ciudad de México, Nezahualcóyotl, Iztapalapa, Los Reyes</strong> y 
+                    zonas aledañas del oriente de CDMX. Sin intermediarios.
                   </p>
                 </div>
               </div>
@@ -64,12 +65,12 @@ const About: React.FC = () => {
           <div className="space-y-6">
             <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Zonas de Servicio
+                Zonas de Venta Minoxidil Kirkland
               </h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="font-semibold">Los Reyes de la Paz</span>
+                  <span className="font-semibold">Ciudad de México (CDMX)</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
@@ -78,6 +79,10 @@ const About: React.FC = () => {
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                   <span className="font-semibold">Iztapalapa</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  <span className="font-semibold">Los Reyes de la Paz</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-green-400 rounded-full"></div>
@@ -93,8 +98,8 @@ const About: React.FC = () => {
                 </div>
               </div>
               <p className="text-sm text-gray-600 mt-4">
-                ✅ Verde oscuro = Pickup gratuito<br />
-                ✅ Verde claro = Pickup con costo mínimo
+                ✅ Verde oscuro = Venta directa gratuita<br />
+                ✅ Verde claro = Venta con costo mínimo de envío
               </p>
             </div>
 
@@ -102,12 +107,18 @@ const About: React.FC = () => {
               <h4 className="font-bold text-gray-900 mb-3">¿Cómo funciona el pickup?</h4>
               <ol className="space-y-2 text-gray-600">
                 <li>1. Contactas por WhatsApp</li>
-                <li>2. Confirmamos disponibilidad</li>
+                <li>2. Confirmamos disponibilidad de Minoxidil Kirkland</li>
                 <li>3. Coordinamos punto de encuentro</li>
-                <li>4. Recoges tu producto sin costo extra</li>
+                <li>4. Recoges tu Minoxidil Kirkland sin costo extra</li>
               </ol>
             </div>
           </div>
+        </div>
+        
+        {/* Hidden SEO Content */}
+        <div className="sr-only">
+          <h3>Minoxidil Kirkland Ciudad de México venta directa</h3>
+          <p>Venta directa Minoxidil Kirkland Ciudad de México, Minoxidil Kirkland Nezahualcóyotl, Minoxidil Kirkland Iztapalapa, Minoxidil Kirkland Los Reyes. Donde comprar Minoxidil Kirkland CDMX. Minoxidil original importado México. Productos barba Ciudad de México. Crecimiento cabello CDMX zona oriente.</p>
         </div>
       </div>
     </section>
