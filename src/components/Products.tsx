@@ -109,23 +109,23 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
                 </div>
 
                 <div className="space-y-2">
-                  <button
-                    onClick={() => onProductClick?.(product.id)}
-                    className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 font-semibold text-sm sm:text-base"
-                  >
-                    Ver Detalles
-                  </button>
-                  <a
-                    href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(product.whatsappMessage)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors flex items-center justify-center gap-2 font-semibold text-sm sm:text-base"
-                  >
-                    <MessageCircle className="w-5 h-5" />
-                    Pedir por WhatsApp
-                  </a>
-                </div>
+                <button
+                  onClick={() => onProductClick?.(product.id)}
+                  className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 font-semibold text-sm sm:text-base"
+                >
+                  Ver Detalles
+                </button>
+                <a
+                  href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(product.whatsappMessage)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors flex items-center justify-center gap-2 font-semibold text-sm sm:text-base"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  Pedir por WhatsApp
+                </a>
               </div>
+            </div>
             </div>
           ))}
         </div>
