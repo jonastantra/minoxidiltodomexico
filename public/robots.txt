@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://minoxidilcdmx.com/sitemap.xml
+# Sitemap - Se ajustará automáticamente al dominio
+Sitemap: /sitemap.xml
 
 # Páginas importantes para crawling
 Allow: /#productos
