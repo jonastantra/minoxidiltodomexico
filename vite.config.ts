@@ -2,18 +2,25 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ command, mode }) => ({
   plugins: [react()],
+  base: command === 'build' ? './' : '/',
   build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false,
+    minify: 'terser',
     rollupOptions: {
       output: {
+        entryFileNames: 'assets/[name]-[hash].js',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
         manualChunks: {
           vendor: ['react', 'react-dom'],
           icons: ['lucide-react']
-        }
+        },
       }
     },
-    minify: 'terser',
     terserOptions: {
       compress: {
         drop_console: true,
@@ -27,6 +34,8 @@ export default defineConfig({
   server: {
     hmr: {
       overlay: false
-    }
+    },
+    host: true,
+    port: 3000
   }
-});
+}));

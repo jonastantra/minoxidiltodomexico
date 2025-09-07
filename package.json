@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:shared": "vite build --base=./",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy:prepare": "npm run build:shared && echo 'Archivos listos en carpeta dist/ - Sube todo el contenido a tu hosting'"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
