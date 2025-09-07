@@ -1,12 +1,16 @@
 import React from 'react';
 import { MessageCircle, Star, CheckCircle } from 'lucide-react';
 
-const Products: React.FC = () => {
+interface ProductsProps {
+  onProductClick?: (productId: string) => void;
+}
+
+const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
   const whatsappNumber = "5569380408";
 
   const products = [
     {
-      id: 1,
+      id: "minoxidil-kirkland-barba",
       name: "Minoxidil Kirkland Barba 5%",
       description: "Minoxidil Kirkland original importado para crecimiento de barba. Fórmula concentrada, resultados garantizados en 4-6 semanas.",
       price: "$450",
@@ -16,7 +20,7 @@ const Products: React.FC = () => {
       whatsappMessage: "Hola! Me interesa el Minoxidil Kirkland para Barba 5%. ¿Está disponible para pickup en CDMX/Neza?"
     },
     {
-      id: 2, 
+      id: "minoxidil-kirkland-cabello",
       name: "Minoxidil Kirkland Cabello 5%",
       description: "Minoxidil Kirkland original para calvicie y debilitamiento capilar. Tratamiento profesional importado, fórmula concentrada.",
       price: "$520",
@@ -26,7 +30,7 @@ const Products: React.FC = () => {
       whatsappMessage: "Hola! Me interesa el Minoxidil Kirkland para Cabello 5%. ¿Puedo recogerlo en Los Reyes/Neza/Iztapalapa?"
     },
     {
-      id: 3,
+      id: "kit-kirkland-completo",
       name: "Kit Kirkland Completo Barba + Cabello",
       description: "Combo especial: Minoxidil Kirkland barba + cabello + aceite nutritivo. El más vendido en CDMX y zona oriente.",
       price: "$850",
@@ -104,6 +108,14 @@ const Products: React.FC = () => {
                   </span>
                 </div>
 
+                <a
+              <div className="space-y-2">
+                <button
+                  onClick={() => onProductClick?.(product.id)}
+                  className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 font-semibold text-sm sm:text-base"
+                >
+                  Ver Detalles
+                </button>
                 <a
                   href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(product.whatsappMessage)}`}
                   target="_blank"
