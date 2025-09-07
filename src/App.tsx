@@ -7,6 +7,7 @@ import About from './components/About';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Branches from './components/Branches';
+import Blog from './components/Blog';
 import Footer from './components/Footer';
 import SEOHead from './components/SEOHead';
 import SEOContent from './components/SEOContent';
@@ -50,6 +51,7 @@ function App() {
       <Products onProductClick={navigateToProduct} />
       <About />
       <Branches />
+      <Blog />
       <SEOContent />
       <Testimonials />
       <Contact />
