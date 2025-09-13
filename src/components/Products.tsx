@@ -15,7 +15,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
       description: "Minoxidil Kirkland original para crecimiento de barba y cabello en Ciudad de México. Tratamiento de 1 mes con resultados visibles. Comprar Minoxidil en CDMX con entrega rápida. Haz tu pedido por WhatsApp.",
       price: "$250",
       originalPrice: "$350",
-      image: "https://images.pexels.com/photos/3685538/pexels-photo-3685538.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/minoxidil-kirkland-real.jpg",
       benefits: ["Kirkland Original", "1 mes tratamiento", "Entrega CDMX"],
       whatsappMessage: "Hola! Me interesa el 1 Mes Minoxidil Kirkland 5% - CDMX por $250. ¿Está disponible para pickup?"
     },
@@ -25,7 +25,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
       description: "Tratamiento completo 3 meses para barba densa en CDMX. Kirkland original con resultados garantizados.",
       price: "$600",
       originalPrice: "$900",
-      image: "https://images.pexels.com/photos/3738088/pexels-photo-3738088.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/minoxidil-kirkland-real.jpg",
       benefits: ["3 meses completos", "Ahorro 33%", "Resultados garantizados"],
       whatsappMessage: "Hola! Me interesa el 3 Meses Minoxidil Kirkland - CDMX por $600. ¿Puedo recogerlo hoy?",
       isPopular: true
@@ -36,7 +36,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
       description: "Tratamiento profesional 6 meses en Nezahualcóyotl. Máximo ahorro y resultados permanentes.",
       price: "$1,100",
       originalPrice: "$1,500",
-      image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/minoxidil-kirkland-real.jpg",
       benefits: ["6 meses completos", "Máximo ahorro", "Resultados permanentes"],
       whatsappMessage: "Hola! Me interesa el 6 Meses Minoxidil Kirkland - Neza por $1,100. ¿Hacen entrega en Nezahualcóyotl?"
     },
@@ -46,7 +46,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
       description: "Biotina 10,000 mcg para fortalecimiento capilar. Complemento perfecto con Kirkland.",
       price: "$450",
       originalPrice: "$600",
-      image: "https://images.pexels.com/photos/3683107/pexels-photo-3683107.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/minoxidil-kirkland-real.jpg",
       benefits: ["10,000 mcg potencia", "Fortalece cabello", "Complemento ideal"],
       whatsappMessage: "Hola! Me interesa la Biotina Natrol 10,000 mcg - CDMX por $450. ¿Está disponible?"
     },
@@ -56,7 +56,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
       description: "Bálsamo 12% concentrado para barba densa y suave. Resultados visibles en 3 semanas.",
       price: "$480",
       originalPrice: "$650",
-      image: "https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/minoxidil-kirkland-real.jpg",
       benefits: ["12% concentrado", "Barba suave", "Resultados rápidos"],
       whatsappMessage: "Hola! Me interesa el Bálsamo Crecimiento Barba 12% - Neza por $480. ¿Puedo recogerlo en Neza?"
     },
@@ -66,7 +66,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
       description: "Tratamiento anual completo con máximo ahorro. Resultados permanentes garantizados.",
       price: "$2,000",
       originalPrice: "$3,000",
-      image: "https://images.pexels.com/photos/3738088/pexels-photo-3738088.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/minoxidil-kirkland-real.jpg",
       benefits: ["Tratamiento anual", "Máximo ahorro 33%", "Resultados permanentes"],
       whatsappMessage: "Hola! Me interesa el 12 Meses Minoxidil Kirkland - CDMX por $2,000. ¿Qué formas de pago aceptan?"
     },
@@ -76,7 +76,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
       description: "Kit completo con Kirkland, bálsamo y aceites. Todo lo necesario para barba perfecta.",
       price: "$780",
       originalPrice: "$1,200",
-      image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/minoxidil-kirkland-real.jpg",
       benefits: ["Kit completo", "Ahorro 35%", "Todo incluido"],
       whatsappMessage: "Hola! Me interesa el Kit Gran Barbón Minoxidil - Neza por $780. ¿Qué incluye exactamente?"
     },
@@ -86,7 +86,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
       description: "Shampoo especializado que fortalece y controla caída capilar. Complemento perfecto con Kirkland.",
       price: "$280",
       originalPrice: "$400",
-      image: "https://images.pexels.com/photos/3738088/pexels-photo-3738088.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/minoxidil-kirkland-real.jpg",
       benefits: ["Control caída", "Fortalece cabello", "Complemento ideal"],
       whatsappMessage: "Hola! Me interesa el Shampoo Minoxidil Control - Neza por $280. ¿Está disponible para pickup?"
     },
@@ -96,7 +96,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
       description: "Loción 10% concentrada para crecimiento rápido. Complementa perfectamente con Kirkland.",
       price: "$349",
       originalPrice: "$500",
-      image: "https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/minoxidil-kirkland-real.jpg",
       benefits: ["10% concentrado", "Acción rápida", "Complemento perfecto"],
       whatsappMessage: "Hola! Me interesa la Loción Crecimiento Barba 10% - CDMX por $349. ¿Cuándo puedo recogerla?"
     },
@@ -106,7 +106,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
       description: "Kirkland 5% Foam original. Fórmula espuma de fácil aplicación con resultados garantizados.",
       price: "$480",
       originalPrice: "$650",
-      image: "https://images.pexels.com/photos/3685538/pexels-photo-3685538.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/minoxidil-kirkland-real.jpg",
       benefits: ["Fórmula espuma", "Fácil aplicación", "Kirkland original"],
       whatsappMessage: "Hola! Me interesa el Minoxidil Kirkland 5% Foam - Neza por $480. ¿Es la versión espuma original?"
     }
