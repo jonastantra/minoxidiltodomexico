@@ -25,7 +25,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
       description: "Tratamiento completo 3 meses para barba densa en CDMX. Kirkland original con resultados garantizados.",
       price: "$600",
       originalPrice: "$900",
-      image: "https://images.pexels.com/photos/3738088/pexels-photo-3738088.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/3-meses-minoxidil-kirkland.jpg",
       benefits: ["3 meses completos", "Ahorro 33%", "Resultados garantizados"],
       whatsappMessage: "Hola! Me interesa el 3 Meses Minoxidil Kirkland - CDMX por $600. ¿Puedo recogerlo hoy?",
       isPopular: true
