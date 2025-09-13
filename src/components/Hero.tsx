@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
           <div className="relative mt-8 lg:mt-0">
             <div className="aspect-square bg-gradient-to-br from-green-400 to-green-600 rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl max-w-md mx-auto">
               <img
-                src="/minoxidil-kirkland-real.jpg"
+                src="https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Minoxidil Kirkland crecimiento barba Ciudad de México Nezahualcóyotl"
                 className="w-full h-full object-cover rounded-xl lg:rounded-2xl"
               />
