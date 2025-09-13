@@ -15,7 +15,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
       description: "Minoxidil Kirkland original para crecimiento de barba y cabello en Ciudad de México. Tratamiento de 1 mes con resultados visibles. Comprar Minoxidil en CDMX con entrega rápida. Haz tu pedido por WhatsApp.",
       price: "$250",
       originalPrice: "$350",
-      image: "/1 mes liquido.jpg",
+      image: "https://images.pexels.com/photos/3685538/pexels-photo-3685538.jpeg?auto=compress&cs=tinysrgb&w=400",
       benefits: ["Kirkland Original", "1 mes tratamiento", "Entrega CDMX"],
       whatsappMessage: "Hola! Me interesa el 1 Mes Minoxidil Kirkland 5% - CDMX por $250. ¿Está disponible para pickup?"
     },
