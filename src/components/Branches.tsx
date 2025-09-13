@@ -12,7 +12,7 @@ const Branches: React.FC = () => {
       details: "Dentro de Plaza Guelatao, Local 76, Pasillo 5",
       zone: "Iztapalapa, CDMX",
       hours: "Lun-Sáb: 10:00 AM - 8:00 PM",
-      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.8234567890123!2d-99.0123456789!3d19.3456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff123456789a%3A0x123456789abcdef0!2sPlaza%20Guelatao!5e0!3m2!1ses!2smx!4v1234567890123!5m2!1ses!2smx",
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.6041913886825!2d-99.0359153!3d19.386283799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fd14babc2e7d%3A0xf02cbb69a1d6cf17!2sMinoxidil%20kirkland%20Cdmx!5e0!3m2!1ses-419!2smx!4v1757743789765!5m2!1ses-419!2smx",
       whatsappMessage: "Hola! Me interesa visitar su sucursal en Plaza Guelatao para comprar Minoxidil Kirkland. ¿Tienen disponibilidad?"
     },
     {
@@ -22,7 +22,7 @@ const Branches: React.FC = () => {
       details: "Oficina principal - Atención personalizada",
       zone: "Nezahualcóyotl, Edomex",
       hours: "Lun-Sáb: 9:00 AM - 7:00 PM",
-      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.1234567890123!2d-99.0234567890!3d19.4123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fe987654321b%3A0x987654321fedcba0!2sOriente%2010%20224%2C%20Reforma%2C%20Nezahualc%C3%B3yotl!5e0!3m2!1ses!2smx!4v1234567890124!5m2!1ses!2smx",
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.8988284942325!2d-98.9810304!3d19.3735329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e3be13451219%3A0x244be3f70d3b92d1!2sMinoxidil%20Kirkland%20Neza!5e0!3m2!1ses-419!2smx!4v1757743836417!5m2!1ses-419!2smx",
       whatsappMessage: "Hola! Me gustaría visitar su oficina en Nezahualcóyotl para conocer sus productos de Minoxidil Kirkland. ¿Cuál es el mejor horario?"
     }
   ];
