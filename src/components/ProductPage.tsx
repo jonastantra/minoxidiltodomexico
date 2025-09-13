@@ -37,9 +37,9 @@ const ProductPage: React.FC<ProductPageProps> = ({ productId = 'minoxidil-kirkla
       description: 'Minoxidil Kirkland original importado específicamente formulado para crecimiento de barba. Concentración al 5% con resultados visibles en 4-6 semanas.',
       longDescription: 'El Minoxidil Kirkland para barba es el tratamiento más efectivo y confiable para lograr una barba densa y completa. Fabricado bajo estándares FDA con la fórmula original de Kirkland Signature, este producto ha ayudado a miles de hombres en Ciudad de México y zona metropolitana a transformar su barba.',
       images: [
-        '/minoxidil-kirkland-real.jpg',
-        '/minoxidil-kirkland-real.jpg',
-        '/minoxidil-kirkland-real.jpg'
+        'https://images.pexels.com/photos/3685538/pexels-photo-3685538.jpeg?auto=compress&cs=tinysrgb&w=800',
+        'https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=800',
+        'https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=800'
       ],
       benefits: [
         'Estimula folículos pilosos inactivos',
