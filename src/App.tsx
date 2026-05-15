@@ -37,7 +37,7 @@ type SiteData = {
 
 const SITE = {
   "key": "todo-mexico",
-  "dir": "G:\\Clonar Sitio Web Minoxidil\\1.Otros Sitios Web\\minoxidiltodomexico\\minoxidiltodomexico",
+  "dir": "G:\\1 Creado Con IA\\02 - Sitios Web Estaticos\\Clon Sitio Minoxidil\\1.Otros Sitios Web\\minoxidiltodomexico\\minoxidiltodomexico",
   "brand": "Minoxidil Todo Mexico",
   "shortBrand": "Todo Mexico",
   "domain": "https://www.minoxidiltodomexico.com/",
@@ -45,7 +45,7 @@ const SITE = {
   "description": "Compra minoxidil Kirkland para barba y cabello con envio a Mexico. Paquetes de 1, 3, 6 y 12 meses, atencion por WhatsApp.",
   "theme": "mexico",
   "accent": "#137a45",
-  "heroImage": "marcas-de-minoxidil.png",
+  "heroImage": "diseno-sin-titulo-1.jpg",
   "location": "Envios a todo Mexico desde CDMX",
   "promise": "Paquetes claros, envio rastreable y asesoria practica antes de comprar.",
   "h1": "Minoxidil para todo Mexico, con pedido claro desde WhatsApp",
