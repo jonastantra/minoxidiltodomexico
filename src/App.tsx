@@ -460,6 +460,30 @@ const CONTACT_METHODS = [
   ["Pago", "Confirma total antes de cerrar", "Te damos producto, precio y forma de entrega."]
 ];
 
+const LOCATION_OPTIONS = [
+  {
+    tag: "Pickup CDMX",
+    title: "Recoge en Plaza Guelatao si estas en la ciudad",
+    copy: "Pasa por tu tratamiento al Local 76, Pasillo 5. Es la opcion mas directa para revisar presentacion, lote y precio antes de pagar.",
+    detail: "Calz. Ignacio Zaragoza 406, Juan Escutia, Iztapalapa.",
+    cta: "Ver pagina de sucursales"
+  },
+  {
+    tag: "Zona Oriente",
+    title: "Entrega personal en Neza, La Paz, Chalco e Ixtapaluca",
+    copy: "Para clientes cercanos coordinamos puntos publicos y pago al recibir. No hace falta arriesgar dinero en depositos previos.",
+    detail: "Metro La Paz, Plaza Sendero, Metro Guelatao y puntos acordados.",
+    cta: "Coordinar entrega"
+  },
+  {
+    tag: "Todo Mexico",
+    title: "Envio nacional con pedido bien armado",
+    copy: "Si vives fuera de CDMX, te ayudamos a elegir paquete, confirmar total y mandar datos completos para que el envio salga sin vueltas.",
+    detail: "Tarifa nacional clara, guia y seguimiento por WhatsApp.",
+    cta: "Pedir cotizacion"
+  }
+];
+
 const FOOTER_COLUMNS = [
   {
     title: "Contacto",
@@ -901,6 +925,26 @@ function App() {
         </div>
       </section>
 
+      <section className="location-showcase" id="sucursales">
+        <div className="section-heading">
+          <p className="eyebrow">Sucursales, entregas y envios</p>
+          <h2>Elige como quieres recibir tu minoxidil</h2>
+          <p>Esta version esta pensada para compradores de todo Mexico: primero decides si recoges, recibes en mano o necesitas paqueteria.</p>
+          <a className="button secondary" href="/sucursales.html">Abrir pagina dedicada</a>
+        </div>
+        <div className="location-showcase-grid">
+          {LOCATION_OPTIONS.map((option) => (
+            <article key={option.title}>
+              <span>{option.tag}</span>
+              <h3>{option.title}</h3>
+              <p>{option.copy}</p>
+              <strong>{option.detail}</strong>
+              <a href={option.tag === 'Pickup CDMX' ? '/sucursales.html' : WHATSAPP}>{option.cta}</a>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="blog" id="blog">
         <div className="section-heading align-left">
           <p className="eyebrow">Blog</p>
@@ -1026,7 +1070,7 @@ function Header() {
         <a href="#guia">Guia</a>
         <a href="#blog">Blog</a>
         <a href="#preguntas">Preguntas</a>
-        <a href="#contacto">Sucursales</a>
+        <a href="#sucursales">Sucursales</a>
       </nav>
       <a className="mini-wa" href={WHATSAPP}>WhatsApp</a>
     </header>
