@@ -3,3 +3,12 @@ dist/
 .env
 .env.local
 npm-debug.log*
+
+# excluido al respaldar antes de formatear C:
+.next/
+build/
+.venv/
+venv/
+__pycache__/
+.expo/
+.turbo/
