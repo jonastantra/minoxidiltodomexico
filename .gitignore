@@ -23,3 +23,15 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# excluido al respaldar antes de formatear C:
+node_modules/
+.next/
+dist/
+build/
+.venv/
+venv/
+__pycache__/
+.env.local
+.expo/
+.turbo/
