@@ -1,42 +1,38 @@
-# Minoxidil Todo Mexico
+# Minoxidil Todo México — sitio nacional (estático)
 
-Micrositio estatico para venta de Minoxidil Kirkland con enfoque nacional: paquetes por mes, compra guiada por WhatsApp, envios a Mexico, sucursales y contenido SEO.
+Sitio **nacional** del negocio: venta en línea de minoxidil Kirkland y productos
+para barba y cabello, pedidos por WhatsApp y envío a todo México ($140 fijos).
+El sitio local de la tienda física en CDMX es otro: minoxidilencdmx.com.
 
-- Dominio: https://www.minoxidiltodomexico.com/
-- WhatsApp: 55-6938-0408
-- Enfoque: paquetes claros, envio rastreable y asesoria practica antes de comprar.
-- Blog: 31 entradas con rutas propias por hash (`#blog/slug-de-entrada`).
-- Contacto: Sucursal Guelatao, Oficinas Neza, horario, envios y footer completo.
+Desde el 10-nov-2026 el sitio ya no es una SPA de React: es un **generador
+estático** (`scripts/build.mjs` + `content/`) que produce HTML completo por
+página en `dist/`, para que Google indexe cada producto y cada guía con su
+propia URL. Vercel despliega con `npm run build` y sirve `dist/`
+(ver `vercel.json`: cleanUrls + trailingSlash).
 
-## Contexto del proyecto
+## Estructura
 
-Lee [PROJECT_CONTEXT.md](./PROJECT_CONTEXT.md) antes de continuar en otra computadora. Ahi esta documentado que se cambio, como funciona el blog, como desplegar y que partes no conviene romper.
+- `content/site-data.mjs` — productos (9), precios, FAQ, cobertura, pasos.
+- `content/guides.mjs` — las 7 guías nacionales.
+- `assets/style.css` — única hoja de estilos (sin frameworks).
+- `scripts/build.mjs` — generador de las 23 páginas + sitemap + robots.
+- `scripts/audit.mjs` — auditoría: títulos/metas únicos, 1 H1 por página,
+  canonical, enlaces internos, páginas huérfanas, claims y similitud vs CDMX.
+- `public/site-images/` — imágenes fuente; el build copia solo las usadas.
 
 ## Comandos
 
 ```bash
-npm install
-npm run dev
-npm run build
-npm run preview
+npm run build   # genera dist/
+npm run audit   # audita dist/ (correr después del build)
 ```
 
-## Flujo rapido en otra computadora
+## Reglas del sitio
 
-```bash
-git clone https://github.com/jonastantra/minoxidiltodomexico.git
-cd minoxidiltodomexico
-npm install
-npm run dev
-```
-
-Para publicar cambios:
-
-```bash
-npm run build
-git add .
-git commit -m "Descripcion del cambio"
-git push origin main
-```
-
-Si el hosting esta conectado a GitHub, el push a `main` dispara el despliegue.
+- Precios publicados vigentes en `content/site-data.mjs`: no cambiarlos aquí
+  sin cambiarlos en el negocio.
+- Envío nacional $140 fijo. Pedidos por WhatsApp +52 1 56 4198 9504.
+- Temas locales de CDMX (precios de mostrador, sucursal, guías locales) NO van
+  aquí: van en minoxidilencdmx.com. Aquí solo una mención con enlace.
+- Horario de sucursal confirmado: martes a sábado, 12:30 a 4:30 pm.
+- Cero promesas médicas o de resultados; cero claims no verificables.
