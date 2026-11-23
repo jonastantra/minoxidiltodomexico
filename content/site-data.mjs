@@ -3,8 +3,8 @@
 // Pedidos: WhatsApp del negocio. Nada de horarios aquí salvo el confirmado
 // de la sucursal (martes a sábado, 12:30–16:30), que vive en la página de sucursales.
 
-export const WA_NUMBER = "5215641989504";
-export const WA_DISPLAY = "+52 1 56 4198 9504";
+export const WA_NUMBER = "525569380408";
+export const WA_DISPLAY = "+52 1 55 6938 0408";
 export const DOMAIN = "https://www.minoxidiltodomexico.com";
 export const CDMX_SITE = "https://minoxidilencdmx.com";
 export const SHIPPING = 140;

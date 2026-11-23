@@ -6,7 +6,7 @@
   (2018). El sitio LOCAL de la tienda física es minoxidilencdmx.com: no mezclar
   enfoques. CDMX = sucursal/mostrador; Todo México = en línea/envío nacional.
 - Repo: jonastantra/minoxidiltodomexico · Hosting: Vercel (push a main = deploy).
-- Pedidos: WhatsApp del negocio +52 1 56 4198 9504 (wa.me/5215641989504).
+- Pedidos: WhatsApp del negocio +52 1 55 6938 0408 (wa.me/525569380408).
 - Envío nacional: $140 fijos, FedEx/Estafeta/Redpack, con guía.
 - Sucursal (recogida): Plaza Guelatao, Local 76, Pasillo 5, Iztapalapa, CDMX.
   Horario confirmado por John el 10-nov-2026: **martes a sábado, 12:30–16:30**.

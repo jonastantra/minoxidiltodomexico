@@ -61,7 +61,7 @@ for (const [p, n] of inbound) if (p !== "/" && n === 0) problems.push(`${p}: PÁ
 notes.push(`Enlaces internos rotos: ${broken}`);
 
 // claims y números viejos
-const banned = ["resultados garantizados", "resultados permanentes", "garantizado", "+500", "100%", "5569380408", "55 6938 0408", "12PM", "5PM"];
+const banned = ["resultados garantizados", "resultados permanentes", "garantizado", "+500", "100%", "5641989504", "56 4198 9504", "12PM", "5PM"];
 for (const [p, h] of html) {
   const text = h.replace(/<script[\s\S]*?<\/script>/g, "");
   for (const b of banned) if (text.includes(b)) problems.push(`${p}: contiene texto prohibido/viejo: «${b}»`);

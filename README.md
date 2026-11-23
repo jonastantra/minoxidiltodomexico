@@ -31,7 +31,7 @@ npm run audit   # audita dist/ (correr después del build)
 
 - Precios publicados vigentes en `content/site-data.mjs`: no cambiarlos aquí
   sin cambiarlos en el negocio.
-- Envío nacional $140 fijo. Pedidos por WhatsApp +52 1 56 4198 9504.
+- Envío nacional $140 fijo. Pedidos por WhatsApp +52 1 55 6938 0408.
 - Temas locales de CDMX (precios de mostrador, sucursal, guías locales) NO van
   aquí: van en minoxidilencdmx.com. Aquí solo una mención con enlace.
 - Horario de sucursal confirmado: martes a sábado, 12:30 a 4:30 pm.

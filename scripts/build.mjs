@@ -13,7 +13,7 @@ import { GUIDES } from "../content/guides.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = join(ROOT, "dist");
 const LASTMOD = "2026-11-10";
-const STORE_PHONE = "+5215641989504";
+const STORE_PHONE = "+525569380408";
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
