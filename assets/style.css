@@ -148,3 +148,12 @@ p{margin:0 0 1em}
 /* Floating WhatsApp */
 .float-wa{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#22a55b;display:grid;place-items:center;box-shadow:0 10px 26px rgba(10,60,35,.35);text-decoration:none}
 .float-wa:hover{background:var(--green-dark)}
+
+/* Libro gratis (26-nov-2026) */
+.libro-band { background: var(--ink); color: #fff; padding: 36px 0; }
+.libro-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; }
+.libro-band h2 { margin: 0 0 6px; font-size: 1.6rem; color: #fff; }
+.libro-band p { margin: 0; color: #e2e8f0; max-width: 56ch; line-height: 1.5; }
+.libro-band .libro-eyebrow { color: #86efac; font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 6px; }
+.libro-btn { display: inline-block; background: var(--green); color: #fff; font-weight: 800; padding: 15px 24px; border-radius: 12px; text-decoration: none; white-space: nowrap; }
+.libro-btn:hover { background: var(--green-dark); }

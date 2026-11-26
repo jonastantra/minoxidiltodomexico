@@ -112,6 +112,16 @@ ${crumbHtml}
 <main>
 ${body}
 </main>
+<section class="libro-band" aria-label="Libro gratis">
+  <div class="wrap libro-inner">
+    <div>
+      <p class="libro-eyebrow">Libro gratis · John Barbas</p>
+      <h2>Barba con Método</h2>
+      <p>Cómo elegir tu kit de minoxidil y usarlo bien, sin tirar dinero. Déjanos tu correo y te llega el PDF.</p>
+    </div>
+    <a class="libro-btn" href="https://libro.johnbarbas.com/?utm_source=minoxidiltodomexico&amp;utm_medium=sitio&amp;utm_campaign=libro-gratis">Quiero el libro gratis</a>
+  </div>
+</section>
 <footer class="site-footer">
   <div class="wrap footer-grid">
     <div>
